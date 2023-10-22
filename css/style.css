@@ -471,7 +471,7 @@
 /*******************************/
 
 .setcion-cta {
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 12.8rem;
 }
 .cta {
   display: grid;
@@ -551,7 +551,17 @@
 /*******************************/
 
 .footer {
-  padding: 9.6rem 0;
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-logo {
@@ -574,12 +584,23 @@
   font-size: 1.4rem;
   color: #767676;
   line-height: 1.6;
+  margin-top: auto;
 }
 
 .footer-heading {
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
 }
 
 .footer-nav {
