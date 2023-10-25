@@ -2,8 +2,29 @@
 instead, 1rem = 1em = 16px */
 
 /*******************************/
-/* BELOW 1344px (smaller desktops) */
+/* BELOW 1344px (Smaller desktops) */
 /*******************************/
 
 @media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+  }
+}
+
+/*******************************/
+/* BELOW 1200px (Landscape tablets) */
+/*******************************/
+
+@media (max-width: 75em) {
 }
