@@ -102,4 +102,47 @@ instead, 1rem = 1em = 16px */
   .meal-content {
     padding: 2.4rem 3.2rem 3.2rem 3.2rem;
   }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--from {
+    margin-top: 1.2rem;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  .btn-mobile-nav {
+    display: flex;
+  }
+
+  /* .header {
+    position: relative;
+  } */
+
+  .main-nav {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+  }
+
+  .main-nav-list {
+  }
 }
