@@ -144,7 +144,8 @@ instead, 1rem = 1em = 16px */
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
 
     /* Hide navigation */
     /* Allows no transitions at all */
@@ -162,7 +163,17 @@ instead, 1rem = 1em = 16px */
 
   .nav-open .main-nav {
     opacity: 1;
+    pointer-events: auto;
     visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: initial;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
   }
 
   .main-nav-list {

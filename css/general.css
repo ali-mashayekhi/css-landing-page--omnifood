@@ -69,10 +69,14 @@ body {
   font-weight: 400;
   color: #555;
   position: relative;
+  overflow-x: hidden;
 }
 
 html {
   font-size: 62.5%;
+
+  /* It only works if nothing positioned absolutly in relation to body */
+  overflow-x: hidden;
 }
 
 /*******************************/
