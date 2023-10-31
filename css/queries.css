@@ -186,3 +186,27 @@ instead, 1rem = 1em = 16px */
     font-size: 3rem;
   }
 }
+
+/*******************************/
+/* BELOW 704px (Smaller tablets) */
+/*******************************/
+
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diet {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 6.2rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+}
