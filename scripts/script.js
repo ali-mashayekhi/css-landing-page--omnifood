@@ -8,17 +8,16 @@ yearEl.textContent = currentDate.getFullYear();
 //// Make mobile navigation
 const headerEl = document.querySelector("header");
 const htmlEl = document.querySelector("html");
-const bodyEl = document.querySelector("body");
 
 headerEl.querySelector(".btn-mobile-nav").addEventListener("click", () => {
   headerEl.classList.toggle("nav-open");
 
   if (headerEl.classList.contains("nav-open")) {
     htmlEl.style["overflow-y"] = "hidden";
-    bodyEl.style["overflow-y"] = "hidden";
+    document.body.style["overflow-y"] = "hidden";
   } else {
     htmlEl.style["overflow-y"] = "";
-    bodyEl.style["overflow-y"] = "";
+    document.body.style["overflow-y"] = "";
   }
 });
 
@@ -66,13 +65,14 @@ const obs = new IntersectionObserver(
     const ent = entries[0];
 
     console.log(ent);
-    if (!ent.isIntersecting) headerEl.classList.add("sticky");
-    if (ent.isIntersecting) headerEl.classList.remove("sticky");
+    if (!ent.isIntersecting) document.body.classList.add("sticky");
+    if (ent.isIntersecting) document.body.classList.remove("sticky");
   },
   {
     // in the viewport
     root: null,
     threshold: 0,
+    rootMargin: "-80px",
   }
 );
 obs.observe(sectionHeroEl);
